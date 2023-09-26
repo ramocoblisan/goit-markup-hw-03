@@ -22,7 +22,9 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    width: auto;
 }
+
 .global-header {
     background-color: var(--default-background);
     height: 80px;
@@ -105,7 +107,6 @@ background-color: var(--footer-background);
 height: 600px;
 flex-direction: column;
 margin: 0px;
-
 }
 
 .main-title {
@@ -142,6 +143,10 @@ margin: 0px;
     background-color: #188ceb;
 }
 
+.values-and-images {
+    width: auto;
+}
+
 .company-values h3 {
     color: var(--title-color);
     width: 270px;
@@ -157,7 +162,10 @@ margin: 0px;
 .company-values {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 30px;
+    width: auto;
+    margin-bottom: 94px;
 }
 .company-values p {
     font-size: 14px;
@@ -180,24 +188,25 @@ color: var(--paragraph-color);
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
 .images-what-we-do {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
+    max-width: auto;
 }
 
 .our-team {
     background: var(--buttons-background);
-    height: 648px;
+    width: auto;
 }
 
 .img-our-team {
     display: block;
-    max-width: 100%; 
+    max-width: auto; 
     height: auto;
 }
 
@@ -371,6 +380,6 @@ color: var(--paragraph-color);
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1200px;
     padding: 0px 15px;
 }
